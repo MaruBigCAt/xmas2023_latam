@@ -74,14 +74,14 @@ $(function () {
 
       // post
       var data = {
-          'entry.743405202': name,
-          'entry.528858446': email,
-          'entry.688753181': country,
+          'entry.238376280': name,
+          'entry.291636501': email,
+          'entry.1520402620': country,
       };
 
       $.ajax({
           type: 'POST',
-          url: 'https://docs.google.com/forms/d/e/1FAIpQLSfdkpsLzlVxPEV1jwgtpVvAgOsfih-EnIGetB7rchQU1G7BuQ/formResponse',
+          url: 'https://docs.google.com/forms/d/e/1FAIpQLSe-Kyj52sOAGjf6GXo-xSHAAHHK1kQ5Rgpt4kKgdLsl5LLT0g/formResponse',
           data: data,
           complete: function() {
             $("#demo_name").val("");

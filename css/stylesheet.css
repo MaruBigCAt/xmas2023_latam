@@ -6,6 +6,22 @@ body {
   font-family: "Noto Sans TC", "Bebas Neue", sans-serif;
 }
 
+.pc {
+  display: block;
+}
+
+.mb {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  .pc {
+    display: none;
+  }
+  .mb {
+    display: block;
+  }
+}
 #main {
   max-height: 100vh;
   overflow: hidden;
@@ -62,8 +78,21 @@ body {
 }
 
 @media (max-width: 750px) {
+  .BgBox {
+    background-image: url(../images/bg_01_m.png);
+  }
   .ruleBox {
-    background-image: url(../images/font_02_m.png);
+    background-image: url(../images/font_02_md.png);
+    background-position: center;
+  }
+}
+@media (max-width: 425px) {
+  .ruleBox {
+    background-image: url(../images/font_02_sm.png);
+    background-position: center;
+  }
+  .ruleBox .item {
+    font-size: 20px;
   }
 }
 .QABox {
@@ -182,19 +211,23 @@ body {
   }
   .QABox_06 {
     text-align: center;
-    background-image: url(../images/bg_07_sm.jpg);
+    background-position: top center;
+    background-image: url(../images/bg_07_sm.jpg?1129_01);
   }
   .QABox_07 {
     text-align: center;
-    background-image: url(../images/bg_08_sm.jpg);
+    background-position: top center;
+    background-image: url(../images/bg_08_sm.jpg?1129_01);
   }
   .QABox_08 {
     text-align: center;
-    background-image: url(../images/bg_09_sm.jpg);
+    background-position: top center;
+    background-image: url(../images/bg_09_sm.jpg?1129_01);
   }
   .QABox_09 {
     text-align: center;
-    background-image: url(../images/bg_10_sm.jpg);
+    background-position: top center;
+    background-image: url(../images/bg_10_sm.jpg?1129_01);
   }
 }
 .GifeBox {
@@ -406,7 +439,12 @@ footer .socialBox .socialList li a svg {
 
 @media (max-width: 750px) {
   .ScrollDown {
-    bottom: 24%;
+    bottom: 25%;
+  }
+}
+@media (max-width: 425px) {
+  .ScrollDown {
+    bottom: 25%;
   }
 }
 .BigTitle {
@@ -443,6 +481,7 @@ footer .socialBox .socialList li a svg {
 @media (max-width: 750px) {
   .QATitle {
     font-size: 10vw;
+    margin-bottom: 16px;
   }
   .QATitle_A {
     text-shadow: 0 1px 2px rgb(35, 24, 21), 1px 0 2px rgb(35, 24, 21), 0 -1px 2px rgb(35, 24, 21), -1px 2px rgb(35, 24, 21), -4px 4px #57c7a9;
@@ -455,6 +494,12 @@ footer .socialBox .socialList li a svg {
   }
   .QATitle_D {
     text-shadow: 0 1px 2px rgb(35, 24, 21), 1px 0 2px rgb(35, 24, 21), 0 -1px 2px rgb(35, 24, 21), -1px 2px rgb(35, 24, 21), -4px 4px #ffc45c;
+  }
+}
+@media (max-width: 425px) {
+  .QATitle {
+    font-size: 9vw;
+    margin-bottom: 16px;
   }
 }
 @keyframes move {

@@ -7,6 +7,14 @@ body {
   font-family: 'Noto Sans TC', 'Bebas Neue', sans-serif;
 }
 
+.pc {display: block;}
+.mb {display: none;}
+
+@media (max-width: 750px) {
+  .pc {display: none;}
+  .mb {display: block;}
+}
+
 #main {
   max-height: 100vh;
   overflow: hidden;
@@ -70,8 +78,22 @@ body {
 }
 
 @media (max-width: 750px) {
+  .BgBox {
+    background-image: url(../images/bg_01_m.png);
+  }
   .ruleBox {
-    background-image: url(../images/font_02_m.png);
+    background-image: url(../images/font_02_md.png);
+    background-position: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .ruleBox {
+    background-image: url(../images/font_02_sm.png);
+    background-position: center;
+    .item {
+      font-size: 20px;
+    }
   }
 }
 
@@ -203,22 +225,26 @@ body {
 
   .QABox_06 {
     text-align: center;
-    background-image: url(../images/bg_07_sm.jpg);
+    background-position: top center;
+    background-image: url(../images/bg_07_sm.jpg?1129_01);
   }
 
   .QABox_07 {
     text-align: center;
-    background-image: url(../images/bg_08_sm.jpg);
+    background-position: top center;
+    background-image: url(../images/bg_08_sm.jpg?1129_01);
   }
 
   .QABox_08 {
     text-align: center;
-    background-image: url(../images/bg_09_sm.jpg);
+    background-position: top center;
+    background-image: url(../images/bg_09_sm.jpg?1129_01);
   }
 
   .QABox_09 {
     text-align: center;
-    background-image: url(../images/bg_10_sm.jpg);
+    background-position: top center;
+    background-image: url(../images/bg_10_sm.jpg?1129_01);
   }
 }
 
@@ -465,7 +491,13 @@ footer {
 
 @media (max-width: 750px) {
   .ScrollDown {
-    bottom: 24%;
+    bottom: 25%;
+  }
+}
+
+@media (max-width: 425px) {
+  .ScrollDown {
+    bottom: 25%;
   }
 }
 
@@ -532,6 +564,7 @@ footer {
 @media (max-width: 750px) {
   .QATitle {
     font-size: 10vw;
+    margin-bottom: 16px;
   }
 
   .QATitle_A {
@@ -571,6 +604,12 @@ footer {
   }
 }
 
+@media (max-width: 425px) {
+  .QATitle {
+    font-size: 9vw;
+    margin-bottom: 16px;
+  }
+}
 
 // 動畫
 @keyframes move {
