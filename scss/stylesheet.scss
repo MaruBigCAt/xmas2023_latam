@@ -69,33 +69,33 @@ body {
   }
 }
 
-.ruleBox {
-  color: #fff;
-  background-image: url(../images/font_02.png);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  font-weight: 500;
-}
+// .ruleBox {
+//   color: #fff;
+//   background-image: url(../images/font_02.png);
+//   background-repeat: no-repeat;
+//   background-position: 50% 50%;
+//   font-weight: 500;
+// }
 
 @media (max-width: 750px) {
   .BgBox {
     background-image: url(../images/bg_01_m.png);
   }
-  .ruleBox {
-    background-image: url(../images/font_02_md.png);
-    background-position: center;
-  }
+  // .ruleBox {
+  //   background-image: url(../images/font_02_md.png);
+  //   background-position: center;
+  // }
 }
 
-@media (max-width: 425px) {
-  .ruleBox {
-    background-image: url(../images/font_02_sm.png);
-    background-position: center;
-    .item {
-      font-size: 20px;
-    }
-  }
-}
+// @media (max-width: 425px) {
+//   .ruleBox {
+//     background-image: url(../images/font_02_sm.png);
+//     background-position: center;
+//     .item {
+//       font-size: 20px;
+//     }
+//   }
+// }
 
 .QABox {
   background-size: cover;
@@ -631,5 +631,63 @@ footer {
   100% {
     opacity: 0;
     transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+//231201 
+.ruleBox {
+  color: #fff;
+  background-image: url(../images/font_02_.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  font-weight: 500;
+
+  .ruleBoxTitle {
+    color: rgba(255, 255, 255, 1);
+    line-height: 1.15;
+    font-weight: bold;
+    font-size: 4vw;
+    text-shadow:
+      0 2px 1px rgb(35, 24, 21),
+      2px 0 2px rgb(35, 24, 21),
+      0 -2px 2px rgb(35, 24, 21),
+      -2px 0 2px rgb(35, 24, 21),
+      -4px 4px #69f2c8;
+  }
+
+  .item {
+    font-size: 24px;
+  }
+
+  .ScrollDown {
+    position: relative;
+  }
+}
+
+@media (max-width: 768px) {
+  .ruleBox {
+    background-image: url(../images/font_02_md_.png);
+    background-position: center;
+    .item {
+      font-size: 20px;
+    }
+    .ruleBoxTitle {
+      font-size: 10vw;
+    }
+  }
+}
+
+@media (max-width: 525px) {
+  .ruleBox {
+    background-image: url(../images/font_02_sm_.png);
+    background-position: center;
+
+    .item {
+      font-size: 20px;
+    }
+
+    .ruleBoxTitle {
+      font-size: 10vw;
+    }
   }
 }
