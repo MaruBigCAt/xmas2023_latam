@@ -130,8 +130,7 @@ $(function () {
             $("#demo_name").val("");
             $("#demo_email").val("");
             $("#demo_country").val("");
-            alert("資料已送出")
-            //alert("Information has been sent!");
+            alert("Completely submit")
           }
       });
   });
